@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dashboard Administrativo — Projeto Crescer</title>
+  <meta name="description" content="Painel administrativo com gráficos de doações e engajamento.">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+  <script src="js/charts.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="brand"><img src="images/logo.svg" alt=""> Projeto Crescer</a>
+      <nav class="main-nav">
+        <ul class="menu-list">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="admin.html" aria-current="page">Dashboard</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Dashboard Administrativo</h1>
+    <p>Indicadores de desempenho e engajamento dos projetos.</p>
+
+    <section class="grid">
+      <article>
+        <h2>Doações Mensais (R$)</h2>
+        <canvas id="donationsChart" width="400" height="200" aria-label="Gráfico de doações" role="img"></canvas>
+      </article>
+
+      <article>
+        <h2>Voluntários Ativos</h2>
+        <canvas id="volunteersChart" width="400" height="200" aria-label="Gráfico de voluntários" role="img"></canvas>
+      </article>
+
+      <article>
+        <h2>Engajamento por Projeto</h2>
+        <canvas id="engagementChart" width="400" height="200" aria-label="Engajamento por projeto" role="img"></canvas>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; <span id="yearDash"></span> Projeto Crescer — Gabriel Umgelter</p>
+    </div>
+  </footer>
+</body>
+</html>

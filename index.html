@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Projeto Crescer — Presença Digital Profissional</title>
+  <meta name="description" content="Plataforma demonstrativa para gestão de ONGs: projetos, doações e voluntariado." />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Ir para o conteúdo</a>
+
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a href="index.html" class="brand" aria-label="Página inicial da ONG">
+        <img src="images/logo.svg" alt="Projeto Crescer logo" class="logo" />
+      </a>
+
+      <nav class="main-nav" role="navigation" aria-label="Menu principal">
+        <button id="navToggle" aria-expanded="false" aria-controls="menuList">Menu</button>
+        <ul id="menuList" class="menu-list">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="cadastro.html">Cadastro</a></li>
+          <li><a href="admin.html">Dashboard</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <h1 id="hero-title">Fortalecendo ações sociais com tecnologia</h1>
+        <p>Plataforma demonstrativa que facilita gestão de projetos, captação de recursos e engajamento de voluntários.</p>
+        <p><a class="btn" href="projetos.html">Conheça os projetos</a> <a class="btn ghost" href="cadastro.html">Seja voluntário</a></p>
+      </div>
+      <picture>
+        <source srcset="images/hero-800.svg 800w, images/hero-1200.svg 1200w" sizes="(max-width:600px) 100vw, 1200px">
+        <img src="images/hero-800.svg" alt="Voluntários trabalhando em projeto comunitário" loading="lazy">
+      </picture>
+    </section>
+
+    <section class="about" aria-labelledby="about-title">
+      <div class="container">
+        <h2 id="about-title">Missão, visão e valores</h2>
+        <p>Missão: promover inclusão social por meio de ações locais. Visão: ser referência em impacto comunitário. Valores: transparência, respeito e cooperação.</p>
+      </div>
+    </section>
+
+    <section class="highlights" aria-labelledby="highlights-title">
+      <div class="container grid">
+        <h2 id="highlights-title" class="sr-only">Destaques</h2>
+
+        <article aria-labelledby="h1">
+          <h3 id="h1">Transparência</h3>
+          <p>Relatórios públicos e prestação de contas.</p>
+        </article>
+
+        <article aria-labelledby="h2">
+          <h3 id="h2">Voluntariado</h3>
+          <p>Oportunidades de participação e certificação.</p>
+        </article>
+
+        <article aria-labelledby="h3">
+          <h3 id="h3">Captação</h3>
+          <p>Campanhas de doação com metas em tempo real.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contato" class="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <h2 id="contact-title">Contato</h2>
+        <address>
+          <p>Rua Exemplo, 123 — Cidade/UF</p>
+          <p>Telefone: <a href="tel:+551199999999">+55 (11) 99999-9999</a></p>
+          <p>Email: <a href="mailto:contato@projecrescer.org">contato@projecrescer.org</a></p>
+        </address>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Projeto Crescer — Todos os direitos reservados.</p>
+      <nav aria-label="Redes sociais">
+        <ul class="socials">
+          <li><a href="#" aria-label="Facebook">fb</a></li>
+          <li><a href="#" aria-label="Instagram">ig</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

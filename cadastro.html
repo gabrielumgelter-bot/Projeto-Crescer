@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cadastro — Projeto Crescer</title>
+  <meta name="description" content="Formulário de cadastro para voluntários e doadores." />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#form">Ir para o formulário</a>
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a href="index.html" class="brand"><img src="images/logo.svg" alt=""></a>
+      <nav class="main-nav" role="navigation">
+        <ul class="menu-list">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="cadastro.html" aria-current="page">Cadastro</a></li>
+          <li><a href="admin.html">Dashboard</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container">
+      <h1>Cadastro de Voluntário / Doador</h1>
+      <form id="registrationForm" action="#" method="post" novalidate aria-labelledby="form-title">
+        <fieldset>
+          <legend id="form-title">Informações Pessoais</legend>
+
+          <label for="fullName">Nome completo *</label>
+          <input id="fullName" name="fullName" type="text" required minlength="3" aria-required="true" />
+
+          <label for="email">E-mail *</label>
+          <input id="email" name="email" type="email" required aria-required="true" />
+
+          <label for="cpf">CPF *</label>
+          <input id="cpf" name="cpf" type="text" inputmode="numeric" placeholder="000.000.000-00" required aria-required="true" pattern="\d3\.\d3\.\d3-\d2" />
+
+          <label for="phone">Telefone *</label>
+          <input id="phone" name="phone" type="tel" inputmode="tel" placeholder="(00) 00000-0000" required aria-required="true" />
+
+          <label for="birthdate">Data de nascimento *</label>
+          <input id="birthdate" name="birthdate" type="date" required max="2007-12-31" />
+
+        </fieldset>
+
+        <fieldset>
+          <legend>Endereço</legend>
+
+          <label for="cep">CEP *</label>
+          <input id="cep" name="cep" type="text" inputmode="numeric" placeholder="00000-000" required pattern="\d5-\d3" />
+
+          <label for="address">Endereço</label>
+          <input id="address" name="address" type="text" />
+
+          <label for="city">Cidade</label>
+          <input id="city" name="city" type="text" />
+
+          <label for="state">Estado</label>
+          <select id="state" name="state" aria-label="Estado">
+            <option value="">Selecione</option>
+            <option value="SP">SP</option>
+            <option value="RJ">RJ</option>
+            <option value="MG">MG</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferências</legend>
+
+          <label for="role">Interessado em *</label>
+          <select id="role" name="role" required>
+            <option value="">Selecione</option>
+            <option value="voluntario">Voluntariado</option>
+            <option value="doador">Doação</option>
+            <option value="parceiro">Parceria</option>
+          </select>
+
+          <label for="message">Mensagem (opcional)</label>
+          <textarea id="message" name="message" rows="4"></textarea>
+        </fieldset>
+
+        <div class="form-actions">
+          <button type="submit" class="btn">Enviar cadastro</button>
+          <button type="reset" class="btn ghost">Limpar</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container">
+      <p>&copy; <span id="year3"></span> Projeto Crescer</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

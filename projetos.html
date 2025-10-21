@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Projetos — Projeto Crescer</title>
+  <meta name="description" content="Lista de projetos sociais: descrição, indicadores e metas de arrecadação." />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">Ir para o conteúdo</a>
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a href="index.html" class="brand" aria-label="Página inicial"><img src="images/logo.svg" alt=""></a>
+      <nav class="main-nav" role="navigation">
+        <ul class="menu-list">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="projetos.html" aria-current="page">Projetos</a></li>
+          <li><a href="cadastro.html">Cadastro</a></li>
+          <li><a href="admin.html">Dashboard</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content">
+    <section class="projects-intro container" aria-labelledby="projects-title">
+      <h1 id="projects-title">Projetos sociais</h1>
+      <p>Conheça nossos projetos, indicadores e como contribuir.</p>
+    </section>
+
+    <section class="projects-list container" aria-labelledby="list-title">
+      <h2 id="list-title" class="sr-only">Listagem de projetos</h2>
+
+      <article class="project-card" aria-labelledby="proj1">
+        <h3 id="proj1">Projeto Educação para Todos</h3>
+        <p>Oficinas educativas e reforço escolar para crianças da comunidade.</p>
+
+        <div class="media">
+          <img src="images/hero-800.svg" alt="Crianças em sala de aula" loading="lazy">
+        </div>
+
+        <div class="funding">
+          <label for="goal1">Meta: R$ 10.000</label>
+          <progress id="goal1" value="6500" max="10000">65%</progress>
+          <p>Arrecadado: R$ 6.500 (65%)</p>
+          <p><a class="btn" href="#">Doar para este projeto</a></p>
+        </div>
+      </article>
+
+    </section>
+
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container">
+      <p>&copy; <span id="year2"></span> Projeto Crescer</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

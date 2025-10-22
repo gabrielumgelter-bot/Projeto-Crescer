@@ -2,7 +2,8 @@
   <rect width="1200" height="600" fill="#e9f3ff"/>
   <g transform="translate(80,80)">
     <rect x="0" y="0" width="480" height="440" rx="16" fill="#0a73ff" opacity="0.95"/>
-    <text x="520" y="120" font-family="Segoe UI, Roboto, Arial" font-size="48" fill="#0b2a4a">Voluntariado e impacto social</text>
-    <text x="520" y="180" font-family="Segoe UI, Roboto, Arial" font-size="20" fill="#083059">Plataforma demonstrativa — Projeto Crescer</text>
+    <text x="520" y="120" font-family="Segoe UI, Roboto, Arial" font-size="48" fill="#0b2a4a">Voluntariado</text>
+    <text x="520" y="180" font-family="Segoe UI, Roboto, Arial" font-size="50" fill="#0b2a4a">e impacto social</text>
+    <text x="520" y="320" font-family="Segoe UI, Roboto, Arial" font-size="20" fill="#083059">Plataforma demonstrativa — Projeto Crescer</text>
   </g>
 </svg>
